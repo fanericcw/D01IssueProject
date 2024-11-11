@@ -1,3 +1,6 @@
+"""
+File to test where does ZhipuAI fail by generating increasingly large files
+"""
 import subprocess
 
 for i in range(1, 101):

@@ -26,5 +26,14 @@ MONGO_PASS='your_mongo_password'
 6. Check the MongoDB collection for the vectors to see if it suceeded.
 
 ### Remarks
+
 - We tried using Cohere as its embedding, and it worked fine with large files. It appears that the issue is with ZhipuAI's API only.
 - It seems unlikely that the issues is therefore with the large 
+
+### Plan
+
+- [ ] Figure out where (which file and line) the error is coming from.
+- [x] Set up a test pipeline to run queries on embeddings of a document to test if the fix is working.
+- [ ] Determine if the error is with the way MongoDB calls the embeddings or with the implementation of the embeddings interface for ZhipuAI.
+- [ ] Read the equivalent source code with Cohere and try to determine where the error is.
+- [ ] Test fixes 
