@@ -1,0 +1,5 @@
+.env
+venv
+pdfs/
+example/params.py
+__pycache__/
